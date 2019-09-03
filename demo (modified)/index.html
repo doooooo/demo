@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Starter Template for Bootstrap</title>
+    <!-- Bootstrap core CSS -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+    
+    
+    <!-- Bootstrap core CSS -->
+	<!--link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"-->
+
+	<!-- Custom styles-->
+	<link href="css/Edits.css" rel="stylesheet">
+	<link href="css/simple-sidebar.css" rel="stylesheet">
+	<link href="css/carousel.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+	<!-- link href="css/bootstrap.min.css" rel="stylesheet"/-->
+	
+	<!-- interactive table -->
+	<link href="dist/css/tabulator.min.css" rel="stylesheet">
+	<link href="dist/css/tabulator_site.min.css" rel="stylesheet">
+	
+	<!-- script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script-->
+	<script src="dist/js/jquery.min.js"></script>
+	<script src="dist/js/bootstrap.min.js"></script>
+	
+	<script src="dist/js/jquery-ui.min.js"></script>
+    
+    
+    <style media="screen">
+      h5{
+        margin-top: 5px;
+        margin-left: 10px;
+      }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+        
+        <ul class="nav navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">New Model</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Simulate <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <!--xxxxxxxxxxxxxxxxx-->
+        
+						<!-- xxxxx -->
+						<div id="mycarousel2" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li class="active" data-target="#mycarousel2" data-slide-to="0"></li>
+								<li data-target="#mycarousel2" data-slide-to="1"></li>
+								<li data-target="#mycarousel2" data-slide-to="2"></li>
+								<li data-target="#mycarousel2" data-slide-to="3"></li>
+							</ol>
+							<div class="carousel-inner" role="listbox">
+								<a class="leQ carousel-control" href="#mycarousel2" role="buSon" data-slide="prev">
+									<span class="glyphicon glyphicon-chevron-leQ"
+									aria-hidden="true"></span> <span class="sr-only">Previous</span>
+									</a> 
+				            <!--xxxxxxxxxxxxxxxxx-->
+							<div class="item active">
+							<div class="container">
+							<div class="carousel-caption">
+                                <div class="starter-template">
+                                    <h1>Online Simulator</h1>
+                                    <p class="lead">Get Insights on Graph Directly in Browser!</p>
+                                </div>
+                                <h2>Select Model</h2>
+								<select id="inputState" class="form-control">
+									<option selected>PN Crystalline Silicon Solar Cell</option>
+								</select>
+                                
+                            </div>
+							</div>
+							</div>
+                            <!--xxxxxxxxxxxxxxxxx-->
+							<div class="item">
+							<div class="container">
+							<div class="carousel-caption">   
+                                
+               <div class="row">
+                <div class="col-md-4">
+                    <h2>Electrical</h2>
+                    <form class="data">
+                      <div class="form-group">
+                          <label for="electrical">NA</label>
+                          <input type="text" class="form-control" name="data[]" id="na" value="1e19">
+                      </div>
+                      <div class="form-group">
+                          <label for="electrical1">ND</label>
+                          <input type="text" class="form-control" name="data[]" id="nd" value="1e19">
+                      </div>
+                      <div class="form-group">
+                          <label for="electrical2">T</label>
+                          <input type="text" class="form-control" name="data[]" id="t" value="300">
+                      </div>
+                      <!--div class="form-group">
+                          <label for="electrical3">Le</label>
+                          <input type="text" class="form-control" name="data[]" id="le" value="100e-6">
+                      </div>
+                      <div class="form-group">
+                          <label for="electrical4">Lb</label>
+                          <input type="text" class="form-control" name="data[]" id="lb" value="100e-6">
+                      </div-->
+                    </form>
+                    <!-- <div class="form-group">
+                        <label for="electrical5">un</label>
+                        <input type="text" class="form-control" id="electrical5">
+                    </div> -->
+                    <!-- <div class="form-group">
+                        <label for="electrical6">up</label>
+                        <input type="text" class="form-control" id="electrical6">
+                    </div>
+                    <div class="form-group">
+                        <label for="electrical7">Nd</label>
+                        <input type="text" class="form-control" id="electrical7">
+                    </div> -->
+                    <!-- <div class="form-group">
+                        <label for="electrical8">Na</label>
+                        <input type="text" class="form-control" id="electrical8">
+                    </div> -->
+                </div>
+                <div class="col-md-4">
+                    <h2>Defect</h2>
+                    <div class="form-group">
+                        <label for="defect1">Empty for now</label>
+                        <input type="text" class="form-control" id="defect1" placeholder="Disabled input here...">
+                    </div>
+                    <div class="form-group">
+                        <label for="defect2">Empty for now</label>
+                        <input type="text" class="form-control" id="defect2" placeholder="Disabled input here...">
+                    </div>
+                    <div class="form-group">
+                        <label for="defect3">Empty for now</label>
+                        <input type="text" class="form-control" id="defect3" placeholder="Disabled input here...">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h2>Optical</h2>
+                    <div class="form-group">
+                        <label for="optical">File input</label>
+                        <input type="file" class="form-control-file" id="optical" aria-describedby="fileHelp">
+                        <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                      <!-- <a href="#bottom" id="hulk">Click me to go to bottom</a> -->
+                        <!--a href="#bottom" id="hulk"><button type="submit" id="submitBtn" class="btn btn-primary">Submit</button></a-->
+                    </div>
+                </div>
+            </div>
+                                
+                            </div>
+							</div>
+							</div>  
+                            <!--xxxxxxxxxxxxxxxxx-->
+							<div class="item active">
+							<div class="container">
+							<div class="carousel-caption">
+                                <div class="simulate">
+                              <!-- form-group <a href="#bottom" id="hulk">Click me to go to bottom</a> btn btn-primary -->
+                                <a href="#bottom" id="hulk"><button type="submit" id="submitBtn"><img src="play.png" width="100px" height="100px"/></button>
+                                    </a>
+                            </div>
+                                
+                            </div>
+							</div>
+							</div>
+                            <!--xxxxxxxxxxxxxxxxx-->    
+                            <!--xxxxxxxxxxxxxxxxx-->
+							<div class="item">
+							<div class="container">
+							<div class="carousel-caption">   
+                                
+                                <div class="jumbotron">
+                                    <h1>Result</h1>
+                                    <canvas id="myChart" width="500" height="300"></canvas>
+                                </div>
+                            </div>
+							</div>
+							</div>    
+                            <!--xxxxxxxxxxxxxxxxx-->
+                            
+    
+        <a class="right carousel-control" href="#mycarousel2"
+										role="buSon" data-slide="next">
+										<span class="glyphicon glyphicon-chevron-right"
+										aria-hidden="true"></span> <span class="sr-only">Next</span>
+										</a>
+								</div>
+								</div>
+								
+            
+        
+    </div>
+    
+    <!-- /.container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+    <script>
+    window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="node_modules/chart.js/dist/Chart.js"></script>
+    <script src="iv.js"></script>
+    <script type="text/javascript">
+      // var na=$('#electrical').val();
+      // var nd=$('#electrical2').val();
+      // var t=document.getElementById("electrical3").value;
+      // var le=document.getElementById("electrical4").value;
+      // var lb=document.getElementById("electrical5").value;
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#submitBtn").click(function(event) {
+            var na = $("#na").val();
+            var nd = $("#nd").val();
+            var t = $("#t").val();
+            //var le = $("#le").val();
+            //var lb = $("#lb").val();
+
+            console.log(na);
+            console.log(nd);
+            console.log(t);
+            //console.log(le);
+            //console.log(lb);
+
+            var arr = iv_func(na, nd, t);
+            console.log(arr);
+            //var arr = iv_func(1e19,1e19,300);
+            //console.log(arr);
+            console.log(event);
+            var ctx = $("#myChart");
+            var myChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ["0.1", "0.2", "0.3", "0.4", "0.5", "0.6", "0.7","0.8","0.9","1"],
+                    datasets: [{
+                        label: 'JV ',
+                        // data: [-0.000002, -2.1620489786271388e-7, 0.00008530245774135276, 0.004185236161358551, 0.20074416090707967, 9.624167486778811, 461.4017059193935, 22120.509778871397,],
+                        data: arr,
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)',
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(153, 102, 255, 0.2)',
+                            'rgba(255, 159, 64, 0.2)'
+                        ],
+                        borderColor: [
+                            'rgba(255,99,132,1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(153, 102, 255, 1)',
+                            'rgba(255, 159, 64, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        xAxes: [{
+                          scaleLabel: {
+                            display: true,
+                            labelString: 'V'
+                          },
+                          ticks: {
+                              beginAtZero:true
+                          }
+                        }],
+                        yAxes: [{
+                          scaleLabel: {
+                            display: true,
+                            labelString: 'A.cm-2'
+                          },
+                          ticks: {
+                              beginAtZero:true
+                          }
+                        }]
+                    }
+                }
+            });
+
+            event.preventDefault();
+        });
+    });
+
+    </script>
+  <script>
+    $("#hulk").click(function() {
+    $("html, body").animate({ scrollTop: $(document).height() }, "slow");
+  });
+  </script>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+								<!-- Menu Toggle Script -->
+								<script>
+									$("#menu-toggle").click(function(e) {
+										e.preventDefault();
+										$("#wrapper").toggleClass("toggled");
+									});
+								</script>
+								<script type="text/javascript">
+
+									$(function () {
+										$('#navTabs a:last').tab('show');
+									})
+									
+								</script>
+								<!-- interactive table -->
+								<script type="text/javascript" src="dist/js/tabulator.min.js"></script>
+								<script type="text/javascript" src="dist/js/interactive_table.js"></script>
+							</body>
+							<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+							<script src="scripts/bootstrap.min.js"></script>
+</body>
+
+</html>
